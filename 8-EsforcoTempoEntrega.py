@@ -2,6 +2,7 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 
+
 #Importando o dataset
 location = "extracao_sgpti_03.csv"
 
@@ -30,7 +31,7 @@ plt.scatter(X, y, s=area, c=color, alpha=0.5)
 #plt.scatter(X, y, color = 'blue')
 plt.grid(which='major', linestyle='--')
 plt.minorticks_on()
-plt.title('Esfoço x Tempo Entrega')
+plt.title('Esforço x Tempo Entrega')
 plt.xlabel('Tempo Entrega')
 plt.ylabel('Esforço')
 plt.show()
