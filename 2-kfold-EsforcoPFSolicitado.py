@@ -56,7 +56,7 @@ try:
             
 			for train_index, test_index in kf.split(X):
                 
-				#Não aceita conjuntos menores q 2 elementes e nem conj treino> conj teste
+				#Não aceita conjuntos menores q 2 elementes
 				if (len(train_index)>1 and len(test_index)>1):
                     
 					X_train, X_test, y_train, y_test = X[train_index], X[test_index], y[train_index], y[test_index]         
